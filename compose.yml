@@ -1,0 +1,8 @@
+services:
+  gatsby-starter-calpa-blog:
+    image: node:22.1.0-bookworm
+    entrypoint: bash
+    volumes:
+      - /workspace/node_modules
+      - .:/workspace
+    working_dir: /workspace
